@@ -4,7 +4,7 @@ Aplikacja internetowa Taco Cloud pozwalająca użytkownikom na zamówienie taco.
 
 Aplikacja jest w trakcie tworzenia.
 
-Aktualnie:
--strona główna wyświetlająca powitanie
--prezentacja danych modelu (wyświetlenie składników do taco wraz z możliwością ich wyboru)
-
+<ul>Aktualnie:
+  <li>strona główna wyświetlająca powitanie </li> <br />
+  <li>prezentacja danych modelu (wyświetlenie składników do taco wraz z możliwością ich wyboru) </li> <br />
+</ul>
