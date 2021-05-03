@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Taco Cloud Application</title>
+    <link rel="stylesheet" th:href="@{/css/orderFormStyle.css}" />
+</head>
+
+<body>
+
+<h1>Zamów przygotowane taco!</h1>
+<img th:src="@{/images/taco_home.png}" class="taco_photo"/>
+<a th:href="@{/design}" id="another" class="another_taco"> Kliknij, aby przygotować kolejne taco.</a>
+
+<form method="POST" th:action="@{/orders}" th:object="${order}">
+
+
+
+    <div th:if="${#fields.hasErrors()}">
+        <span class="validationError">
+            Usuń wymienione problemy i spróbuj ponowanie.
+        </span>
+    </div>
+
+
+     <table class="center_table">
+       <tr>
+         <th colspan="2" class="table_nav"> Wypełnij adres doręczenia: </th>
+       </tr>
+
+         <tr>
+        <th align="right">     <label for="name" > Imię i nazwisko: </label>   </th>
+
+        <th align="left">     <input type="text" th:field="*{name}"/>   </th>
+                 <br />
+    </tr>
+
+
+        <tr>
+        <th align="right">    <label for="street"> Ulica: </label>    </th>
+        <th align="left">    <input type="text" th:field="*{street}" />    </th>
+                <br />
+    </tr>
+
+    <tr>
+        <th align="right">    <label for="city"> Miejscowość: </label>   </th>
+        <th align="left">    <input type="text" th:field="*{city}" />    </th>
+                <br />
+    </tr>
+
+    <tr>
+        <th align="right">    <label for="state"> Województwo: </label> </th>
+        <th align="left">    <input type="text" th:field="*{state}" />   </th>
+                <br />
+    </tr>
+
+    <tr>
+        <th align="right">    <label for="zip"> Kod pocztowy: </label>    </th>
+        <th align="left">    <input type="text" th:field="*{zip}" />     </th>
+                <br />
+    </tr>
+
+     </table>
+
+    <table class="center_table">
+
+        <tr>
+            <th colspan="2" class="table_nav"> Wypełnij płatność: </th>
+        </tr>
+
+    <tr>
+        <th align="right">    <label for="ccNumber"> Numer karty kredytowej: </label> </th>
+        <th align="left">    <input type="text" th:field="*{ccNumber}" />    </th>
+                <br />
+    </tr>
+
+    <tr>
+        <th align="right">    <label for="ccExpiration"> Data ważności: </label>  </th>
+        <th align="left">    <input type="text" th:field="*{ccExpiration}" />    </th>
+                <br />
+    </tr>
+
+    <tr>
+        <th align="right">    <label for="ccCVV"> Kod CVV: </label>   </th>
+        <th align="left">    <input type="text" th:field="*{ccCVV}" />   </th>
+                <br />
+    </tr>
+
+    </table>
+
+    <div class="button_center">
+        <input type="submit" style="width:160px;height:50px;" value="Złóż zamówienie" />
+    </div>
+
+
+</form>
+</body>
+</html>

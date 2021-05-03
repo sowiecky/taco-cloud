@@ -1,0 +1,50 @@
+h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: Verdana;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 0;
+}
+.taco_photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 9.2%;
+}
+
+.another_taco {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-image: linear-gradient(red, yellow);
+    margin-bottom: 120px;
+}
+
+.center_table {
+    text-align: center;
+    margin: auto;
+}
+
+.table_nav {
+    font-size: 35px;
+    padding-bottom: 16px;
+    font-family: Verdana;
+}
+
+th {
+    font-size: 20px;
+
+}
+
+.button_center {
+    display: block;
+    text-align: center;
+    padding: 20px 30px;
+}
+
