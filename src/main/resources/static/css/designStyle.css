@@ -1,0 +1,42 @@
+h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: Verdana;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    font-family: cursive;
+}
+
+.taco_photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 9.2%;
+}
+
+.ingredient_group {
+    text-align: center;
+    font-size: 16px;
+}
+
+body {
+    background-image: linear-gradient(red, yellow);
+}
+
+.footer {
+    margin: auto;
+    width: 35%;
+    border: 3px solid #ad8121;
+    padding: 5px;
+    text-align: center;
+}
+
+.button_center {
+    padding-top: 4px;
+}
+
+
+

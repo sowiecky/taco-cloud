@@ -35,11 +35,15 @@ public class DesignTacoController {
                 new Ingredient("SRCR", "Śmietana", Ingredient.Type.SAUCE)
                 );
 
+
         Type[] types = Ingredient.Type.values();
+
 
         for(Type type : types) {
             model.addAttribute(type.toString().toLowerCase(), filterByType(ingredients, type));
         }
+
+
 
         model.addAttribute("design", new Taco());
 
@@ -48,6 +52,9 @@ public class DesignTacoController {
 
     private List<Ingredient> filterByType(
        List<Ingredient> ingredients, Type type) {
+
+
+
         return ingredients
                 .stream()
                 .filter(x -> x.getType().equals(type))
