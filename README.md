@@ -9,4 +9,5 @@ Aktualnie:
   <li>strona główna wyświetlająca powitanie </li> <br />
   <li>prezentacja danych modelu (wyświetlenie składników do taco wraz z możliwością ich wyboru) </li> <br />
   <li>dodany css </li> <br />
+  <li>dodany formularz zamówienia </li> <br />
 </ul>
